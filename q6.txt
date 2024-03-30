@@ -1,0 +1,7 @@
+Nome: Breno Mateus dos Santos
+Matrícula: 20200081801
+
+Questão 6:
+
+A expressão correta é *(pulo + 2). Pois, ela irá somar 2 a pulo o que fará ele a apontar para o endereço de memória do elemento na posição 3 e com o uso do símbolo * irá mostrar o valor guardado no mesmo.
+
