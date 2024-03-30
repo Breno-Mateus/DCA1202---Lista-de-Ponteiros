@@ -1,0 +1,21 @@
+Nome: Breno Mateus dos Santos
+Matrícula: 20200081801
+
+Questão 2:
+
+int main() {
+    int i = 5, *p;
+    p = &i;
+    printf("%p %p %d %d %d %d\n", p, p+1, *p+2, **&p, 3**p, **&p+4);
+}
+
+O resultado impresso será: 4094 4096 7 5 15 9
+
+Explicando por partes:
+p - irá mostrar o valor do ponteiro p que é o endereço de memória da variável que ele aponta, que no caso é o i, e como é fornecido no enunciado ele é 4094.
+p+1 - irá mostrar o próximo endereço de memória, que será 4096, pois o inteiro ocupa 2 bytes na memória.
+*p+2 - irá somar o valor do endereço apontado que é 5 com 2, portanto o resultado será 7.
+**&p - O valor da expressão será 5. Pois, a expressão "&p" vai fornecer o endereço de memória do ponteiro p, o primeiro "*"  vai fornecer o valor apontado por p que é o endereço de memória da variável i e o segundo "*" o valor que está guardado no endereço de memória da variável i que é 5.
+3**p - irá multiplicar 3 com o valor guardado no endereço de memória apontado por p que é 5, resultando no valor 15.
+**&p+4 - como sabemos que **&p = 5, logo 5+4 será igual a 9.
+
