@@ -1,0 +1,30 @@
+Nome: Breno Mateus dos Santos
+Matrícula: 20200081801
+
+Questão 4:
+
+a) A saída foi 20. Apesar de o valor 20 não ter sido atribuída diretamente a variável "valor" ele foi através do ponteiro p1 que aponta para ela.
+
+b) A saída foi 29.0. A mesma lógica da questão anterior se aplica aqui.
+
+c) A saída foi P. Criou-se uma string literal "Ponteiros" na memória e inicializar um ponteiro nome para apontar para o primeiro caractere da string. Em seguida, cria um ponteiro p3 para caracteres e atribui a ele o endereço do primeiro caractere da string nome. E por fim, atribui para a variável aux o valor do endereço apontado em p3 que é "P".
+
+d) A saída foi e. Segue a mesma lógica da questão anterior, só que p3 irá apontar para o quinto caractere do nome e atribui ele na variável aux.
+
+e) A saída foi P. Pois o ponteiro nome aponta para o primeiro caractere da string "Ponteiros", logo o ponteiro p3 irá receber esse valor.
+
+f) A saída foi e. Irá mostrar o caractere na posição 4.
+
+g) A saída foi t. Irá mostrar mostra o caractere na posição 3.
+
+h) A saída foi 31. o ponteiro p4 irá apontar para o primeiro valor do vetor "vetor", logo a variável idade receberá o valor de p4 que é 31.
+
+i) A saída foi 45. o ponteiro p5 irá apontar para o segundo elemento do vetor "vetor", logo a variável idade receberá o valor 45.
+
+j) A saída foi 27. seguindo a mesma lógica a variável nome receberá o valor apontado pelo ponteiro p4 que é 27.
+
+l) A saída foi 31. Ainda seguindo a mesma lógica, como foi diminuído 2 da posição do vetor, o valor apresentado será o da primeira posição.
+
+m) A saída foi 45. o ponteiro p5 irá apontar para o endereço de memória do vetor na posição 2 - 1 que tem como resultado o endereço de memória o vetor na posição 1.
+
+n) A saída foi 27. foi somado um ao ponteiro p5 que resulta no endereço de memória do vetor com posição igual a 2.
