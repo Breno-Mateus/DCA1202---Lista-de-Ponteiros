@@ -1,0 +1,12 @@
+Nome: Breno Mateus dos Santos
+Matrícula: 20200081801
+
+Questão 1:
+
+◦ p == &i; O valor da expressão será verdadeira, pois o valor do ponteiro p é igual a posição na memória da variável i, que é acessada pela expressão "&i".
+
+◦ *p - *q; O valor da expressão será -2, pois *p tem valor 3 e *q tem valor 5.
+
+◦ **&p; O valor da expressão será 3. Pois, a expressão "&p" vai fornecer o endereço de memória do ponteiro p, o primeiro "*"  vai fornecer o valor apontado por p que é o endereço de memória da variável x e o segundo "*" o valor que está guardado no endereço de memória da variável x que é 3.
+
+◦ 3 - *p/(*q) + 7; O valor da expressão será 10. Substituindo os valores de *p=3 e *q=5 e efetuando a divisão o valor será 0, pois como se trata de uma divisão de inteiros em C os valores fracionados são descartados. Fazendo 3-0+7 o resultado será 10.
