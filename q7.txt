@@ -1,0 +1,12 @@
+Nome: Breno Mateus dos Santos
+Matrícula: 20200081801
+
+Questão 7:
+
+Todas as expressões estão corretas. Pois:
+
+p = mat + 1 - Ela atribui a p o endereço do segundo elemento do array mat[].
+
+p = mat - Ela atribui a p o endereço do primeiro elemento do array mat[].
+
+x = (*mat) - Ela atribui a x o valor do primeiro elemento do array mat[]. A expressão *mat desreferencia o ponteiro mat, obtendo assim o valor do primeiro elemento do array.
