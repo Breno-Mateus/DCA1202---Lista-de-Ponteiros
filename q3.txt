@@ -1,0 +1,8 @@
+Nome: Breno Mateus dos Santos
+Matrícula: 20200081801
+
+Questão 3:
+
+*q = &j - Ilegal. Isso tenta atribuir um endereço de memória a um valor inteiro, o que não é permitido.
+i = (*&)j - Ilegal. A expressão (*&) não é válida, pois não pode desreferenciar um endereço que não é um ponteiro devido a separação por parênteses.
+q = *p;: Ilegal. O operador * desreferencia um ponteiro, mas q é um ponteiro e *p tenta desreferenciar outro ponteiro. Isso é uma operação incorreta de tipos, não se pode atribuir um valor inteiro a um ponteiro.
