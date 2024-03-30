@@ -1,0 +1,9 @@
+Nome: Breno Mateus dos Santos
+Matrícula: 20200081801
+
+Questão 8:
+
+O primeiro programa irá mostrar na saída os valores de cada elemento do vetor vet, pois o uso do símbolo * serve para mostrar os valores do endereço de memória apontado pela expressão.
+
+Já o segundo programa irá apenas mostrar o endereço de memória pois ele só faz o uso da expressão vet+i sem o uso do símbolo *.
+
