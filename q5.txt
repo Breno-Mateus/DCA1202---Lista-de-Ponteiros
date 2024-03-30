@@ -1,0 +1,7 @@
+Nome: Breno Mateus dos Santos
+Matrícula: 20200081801
+
+Questão 5:
+
+O programa cria um vetor com cinco elementos do tipo float e depois um ponteiro para float que aponta para o primeiro elemento desse vetor. E também a variável i do tipo int. Em seguida é criado um laço com cinco repetições que irá mostrar: o do elemento no vetor, o seu valor sendo acessado diretamente usando a própria variável vetor, novamente o seu valor só que dessa vez utilizando o ponteiro f que será somado a 1 a cada repetição, o endereço de memória de cada elemento do vetor sendo acessado diretamente pela a variável vetor e novamente o endereço de memória de cada elemento do vetor mas sendo acessados pelo ponteiro f, que será incrementado a interação do laço.
+
