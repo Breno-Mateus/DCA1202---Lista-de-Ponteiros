@@ -1,0 +1,12 @@
+Nome: Breno Mateus dos Santos
+Matrícula: 20200081801
+
+Questão 23:
+
+I. O resultado da impressão na linha 24 é: 7 - 7. - O primeiro valor é resultado do retorno da função1 que recebe como parâmetros o vetor e um número inteiro, ela irá percorrer todo o vetor e comparar o elemento da posição com o valor inteiro recebido. Como o valor inteiro fornecido foi 15 e 15 também é o 7 elemento do vetor então o número retornado é 7. Já o segundo valor é resultado do retorno da função2 que recebe como parâmetros o vetor, o valor a ser procurado, o indice inical do intervalo e o indice final do intervalo. Ela obtém um valor de indice medio e vai verificando se o indice atual tem valor igual a do valor desejado. A saída também será 7. Portanto é correta a afirmativa.
+
+II. A função funcao1, no pior caso, é uma estratégia mais rápida do que a funcao2. - A afirmação é falsa pois no pior caso da função1 o valor vai estar no ultimo elemento, tendo assim que percorrer todo o vetor com 10 interações. O que não acontece na função2, pois como a primeira interação é iniciada no elemento médio ele só irá percorrer no máximo 5 interações, metade da utilizada na função1.
+
+III. A função funcao2 implementa uma estratégia iterativa na concepção do algoritmo. - A função2 é uma função é recursiva, ou seja, ela chama a si mesma durante sua execução.
+
+Portanto, só a afirmação I é correta.
