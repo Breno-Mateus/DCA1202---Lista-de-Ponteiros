@@ -1,0 +1,15 @@
+Nome: Breno Mateus dos Santos
+Matrícula: 20200081801
+
+Questão 10:
+
+O seguinte irá apresentar um erro:
+
+#include <stdio.h>
+
+void main() {
+    int const *x = 3;
+    printf("%d", ++(*x));
+}
+
+Foi declarado x como um ponteiro para um inteiro constante e foi tentado modificar o valor apontado por x, mas não é possível pelo fato de x ser um ponteiro para inteiros constante, o que impossibilita modificar o valor apontado pela variável.

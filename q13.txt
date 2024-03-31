@@ -1,0 +1,63 @@
+Nome: Breno Mateus dos Santos
+Matrícula: 20200081801
+
+Questão 13:
+
+Um memory leak ocorre quando um programa aloca dinamicamente memória da heap (por exemplo, usando funções como malloc() em C) e não libera essa memória quando ela não é mais necessária. Como resultado, a memória alocada permanece ocupada mesmo depois que o programa termina de usá-la, resultando em uma "vazamento" gradual de memória do sistema. Isso pode levar a problemas de desempenho, como consumo excessivo de memória RAM, e em casos extremos, pode até causar a falha do programa ou do sistema operacional devido à falta de memória disponível.
+
+Exemplos onde ocorre memory leak:
+
+Exemplo 1)
+
+int main() {
+    int *ptr = (int *)malloc(sizeof(int));
+
+    if (ptr == NULL) {
+        printf("Falha ao alocar memória.\n");
+        return 1;
+    }
+
+    return 0;
+}
+
+Nesse exemplo o programador aloca a memória mas esquece de liberar a memória com o free().
+
+Exemplo 2)
+
+int main() {
+
+    int *ptr = (int *)malloc(sizeof(int));
+
+    if (ptr == NULL) {
+        printf("Falha ao alocar memória.\n");
+        return 1;
+    }
+
+    ptr = (int *)malloc(sizeof(int)); 
+
+    return 0;
+}
+
+Nesse exemplo o programa aloca memória dinamicamente e armazena o endereço em um ponteiro ptr. Em seguida, o programador atribui a ptr um novo endereço de memória sem liberar o endereço anteriormente alocado. Isso resulta em uma perda do ponteiro para a memória originalmente alocada, tornando impossível liberar essa memória. Como resultado, a memória se torna inacessível e permanece alocada até que o programa termine.
+
+Exemplo 3)
+
+void aloca_memoria() {
+    int *ptr = (int *)malloc(sizeof(int));
+
+    if (ptr == NULL) {
+        printf("Falha ao alocar memória.\n");
+        return;
+    }
+    
+    free(ptr);
+}
+
+int main() {
+    aloca_memoria();
+
+    return 0;
+}
+
+Aqui a alocação e liberação de memória são realizadas dentro de uma função aloca_memoria(). Se essa função não for chamada no programa principal, a memória alocada dentro dela nunca será liberada. Isso pode ocorrer se houver uma falha na lógica do programa ou se a função não for mais necessária, mas ainda estiver presente no código. Como resultado, a memória permanecerá alocada até que o programa termine, causando um memory leak.
+

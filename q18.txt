@@ -1,0 +1,6 @@
+Nome: Breno Mateus dos Santos
+Matrícula: 20200081801
+
+Questão 18:
+
+Foi utilizado a função clock(), da biblioteca time.h. Os tempos de execução dos problemas 16 e 17 foram respectivamente 0.000344s e 0.000204s. Concluindo que a questão na qual foi implementada a minha própria função de ordenação foi a que teve o menor tempo de execução.

@@ -1,0 +1,6 @@
+Nome: Breno Mateus dos Santos
+Matrícula: 20200081801
+
+Questão 22:
+
+A saída do programa será 15, 3 e 0.

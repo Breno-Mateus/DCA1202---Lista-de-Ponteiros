@@ -1,0 +1,22 @@
+Nome: Breno Mateus dos Santos
+Matrícula: 20200081801
+
+Questão 9:
+
+O seguinte código possui alguns erros:
+
+#include <stdio.h>
+
+struct teste{
+    int x = 3;
+    char nome[] = "jose";
+};
+
+main(){
+    struct teste *s;
+
+    printf("%d", s->x);
+    printf("%s", s->name);
+}
+
+O primeiro é que ele atribui valores para as variáveis dentro do struct o que não é permitido. O segundo é que ele apenas cria um ponteiro para estrutura teste e ele não aponta para nenhuma variável que pertence a estrutura teste. O terceiro é um erro de semântica com "nome" e "name".

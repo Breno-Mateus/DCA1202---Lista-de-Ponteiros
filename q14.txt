@@ -1,0 +1,23 @@
+Nome: Breno Mateus dos Santos
+Matrícula: 20200081801
+
+Questão 14:
+
+Um ponteiro para uma função em C é um tipo especial de ponteiro que armazena o endereço de memória de uma função. Isso permite que você chame a função referenciada através do ponteiro, em vez de chamar diretamente pelo nome da função.
+
+Exemplo com uso de um ponteiro para uma função:
+
+int soma(int a, int b) {
+    return a + b; /* Função que recebe dois inteiros e retorna a soma dos dois */
+}
+
+int main() {
+    int (*ponteiro_para_funcao)(int, int); /* Cria um ponteiro para função que retorna um inteiro e recebe dois inteiros como parâmetros */
+    
+    ponteiro_para_funcao = soma; /* Faz o ponteiro para função "ponteiro_para_funcao" apontar para a função soma */
+
+    int resultado = ponteiro_para_funcao(3, 4); /* Guarda o valor retornado pela fução soma na variável resultado. A função é chamada pelo ponteiro, o que é equivalente a chamar soma(3, 4) */
+
+    return 0;
+}
+

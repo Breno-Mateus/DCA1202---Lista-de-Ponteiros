@@ -1,0 +1,24 @@
+Nome: Breno Mateus dos Santos
+Matrícula: 20200081801
+
+Questão 21:
+
+A seguinte opção possui um possivel vazamento de memória:
+
+C)
+int f(char *data){
+    void *s;
+
+    s = malloc(50);
+
+    int size = strlen(data);
+
+    if (size > 50)
+        return(-1);
+    
+    free(s);
+    
+    return 0;
+}
+
+Pois, caso o tamanho da string data for menor que 50 a função irá retornar -1 sem liberar a memória antes.

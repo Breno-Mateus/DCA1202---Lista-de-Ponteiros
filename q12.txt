@@ -1,0 +1,20 @@
+Nome: Breno Mateus dos Santos
+Matrícula: 20200081801
+
+Questão 12:
+
+aloha[2] = value - Válido.
+
+scanf("%f", &aloha) - Inválido. O comando scanf espera um ponteiro para float como argumento para armazenar o valor lido. Aqui, &aloha é um ponteiro para o array aloha, não um ponteiro para um elemento individual.
+
+aloha = "value" - Inválido. Você não pode atribuir uma string (que é um ponteiro para o primeiro caractere da string) a um array de floats.
+
+printf("%f", aloha) - Inválido. printf espera um argumento de tipo float, mas aloha é um array de floats. Você precisa especificar qual elemento de aloha deseja imprimir.
+
+coisas[4][4] = aloha[3] - Válido.
+
+coisas[5] = aloha - Inválido. Você está tentando atribuir um array de floats (aloha) a uma linha da matriz coisas, que não é permitido em C..
+
+pf = value - Não é possivel, pois a variável "pf" é um ponteiro e atribuição de uma valor para ponteiro deve ser feita com um asterisco antes do nome do ponteiro.
+
+pf = aloha - Válido.
